@@ -1,0 +1,694 @@
+body{
+    
+}
+
+
+
+
+header {
+    position: relative;
+    color: #fff;
+    background: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; 
+    height: 660px;
+    text-align: center;
+}
+
+
+.button-rounded {
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+
+
+nav {
+    color: #fff;
+    background-color: royalblue;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+    background: #fff; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar, .navbar-brand {
+    padding-top: 0;
+}
+
+
+#navbarSupportedContent .navbar-brand{
+    position: absolute;left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+
+#navbarSupportedContent ul li{
+    border-top: 0 solid #54d154;
+    padding-top: 5px;
+    transition: all 0.5s;
+}
+
+#navbarSupportedContent ul li a{
+    color: #fff;
+    padding: 0 10px;
+    display:inline-block;
+    text-align:center;
+}
+
+#navbarSupportedContent ul li.active{
+    font-weight: bold;
+    border-top: 5px solid #54d154;
+    padding-top: 0;
+}
+#navbarSupportedContent ul li:hover {
+    border-top: 5px solid #54d154;
+    padding-top: 0;
+}
+
+#navbarSupportedContent form{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+}
+
+#search {
+    position: relative;
+    font-size: 18px;
+/*    padding-top: 40px;*/
+    margin: -20px auto 0;
+}
+#search label {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+#search-form{
+    float: right;
+}
+
+
+#search #search-input {
+    padding: 1px 30px 1px 15px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255, 0.8);
+    border: none;
+}
+
+
+#search-input::placeholder{
+    color: #000;
+}
+
+
+#home {
+    position: relative;
+    top: 35%;
+}
+#home h2{
+    font-size: 3.7em;
+    font-weight: bold;
+}
+
+#home button {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+
+
+.scroll-downs {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 80px;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+    cursor: pointer;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+
+
+/*** What We Do ***/
+.main-section {
+    padding: 40px 0;
+}
+
+.section-header {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.header h2:before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 3px;
+    background-color: #828181;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-23px);
+}
+
+.header p {
+    margin-top: 15px;
+    margin-bottom: 70px;
+    color: #b7b3b3;
+}
+
+.service-item{
+    color: #828181;
+}
+
+.service-item .service-icon {
+    background-color: #e1f3e1;
+    color: #54d154;
+    padding: 30px;
+    font-size: 100px;
+    border-radius: 30px;
+}
+
+.service-item h3 {
+    margin: 25px 0 20px;
+}
+
+.service-item button {
+    background-color: #54d154;
+    border: none;
+    margin: 10px 0 40px;
+}
+
+
+
+/*** Latest Works ***/
+.latest-works {
+    background-color: #54d154;
+}
+
+.latest-works .header h2, .latest-works .header p{
+    color: #207b20;
+}
+
+.latest-works .header h2:before{
+    background-color: #207b20;
+}
+
+
+.latest-works .container .btn, .our-clients .container .btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.latest-works .container .btn i, .our-clients .container .btn i{
+   margin-left: 10px;
+}
+
+
+
+
+/*** Testimonials ***/
+.testimonial-item{
+    
+    color: #505050;
+}
+
+.testimonial-text{
+    text-align: center;
+    font-weight: bold;
+}
+
+.testimonial-author {
+    text-align: center;
+}
+.testimonial-author img {
+    width: 50px;
+}
+
+.testimonial-author .author{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.testimonial-author .author p{
+    margin-bottom: 0;
+}
+.testimonial-author .author .name{
+    font-weight: bold;
+}
+
+.testimonial-author .author-image{
+    border: 2px solid #cccccc;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.carousel-control i{
+    font-size: 50px;
+    color: #ccc;
+}
+
+
+
+
+
+/*** Our Clients ***/
+.our-clients{
+    background-color: #f2f1f1;
+}
+.logo-area {
+    margin:auto;
+}
+
+.client-logo img {
+    display: none;
+}
+
+.client-item{
+    margin: auto;
+}
+
+.shadow-client{
+    background-color: #ccc;
+    margin: 0;
+    width: 100%;
+    margin: auto;
+}
+.hide-shadow{
+    display: none;
+}
+
+.shadow-google{
+    -webkit-mask-box-image: url("../img/clients/google.png");
+}
+.shadow-yahoo{
+    -webkit-mask-box-image: url("../img/clients/yahoo.png");
+}
+.shadow-microsoft{
+    -webkit-mask-box-image: url("../img/clients/microsoft.png");
+}
+.shadow-intel{
+    -webkit-mask-box-image: url("../img/clients/intel.png");
+}
+.shadow-qualcomm{
+    -webkit-mask-box-image: url("../img/clients/qualcomm.png");
+}
+.shadow-cisco{
+    -webkit-mask-box-image: url("../img/clients/cisco.png");
+}
+.shadow-apple{
+    -webkit-mask-box-image: url("../img/clients/apple.png");
+}
+.shadow-asus{
+    -webkit-mask-box-image: url("../img/clients/asus.png");
+}
+
+
+.our-clients .container .btn {
+    background-color: #dddcdc;
+    color: #828181;
+    margin: 50px 0 20px;
+}
+.our-clients .container .btn:hover {
+    background-color: #828181;
+    color: #dddcdc;
+}
+
+
+
+
+/*** TEAM ***/
+.team {
+    background-color: #54d154;
+    color: #207b20;
+}
+
+.team .header h2, .team .header p{
+    color: #207b20;
+}
+
+.team .header h2:before{
+    background-color: #207b20;
+}
+
+.team-member{
+    text-align: center;
+}
+
+.member-name {
+    color: #ffffff;
+    margin-top: 100px;
+    position: relative;
+}
+.member-name p{
+    margin-bottom: 10px;
+}
+
+.member-name:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 78px;
+    background-color: #207b20;
+    bottom: 30px;
+    
+}
+
+.social-contact{
+    background-color: #c5e9c5;
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-contact a {
+    color: #c5e9c5;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.social-contact .dribbble-icon {
+    color: #ea4c89;
+}
+
+
+
+.dribbble-background {
+    color: #c5e9c5;
+}
+.behance-background {
+    color: #0061ff;
+}
+.twitter-background {
+    color: #00aced;
+}
+
+.fa-stack {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.fa-stack-2x {
+    font-size: 20px
+}
+.fa-stack-1x {
+    font-size: 12px;
+}
+
+.icon-border{
+    margin: 0;
+    padding: 0;
+    width: 20px !important;
+    height: 30px !important;
+    line-height: 25px !important;
+}
+.bottom-icon {
+    font-size: 25px !important;
+}
+.main-icon {
+    font-size: 12px !important;
+}
+
+.dribbble-icon .main-icon {
+    font-size: 22px !important;
+}
+
+
+
+
+/*** Work With Us ***/
+.work-with-us {
+    background-color: #3eba3e;
+    padding: 27px 0 25px;
+    text-align: center;
+}
+
+.work-with-us button, .work-with-us button:focus {
+    background-color: #54d154;
+    color: #ffffff;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 3px rgba(51,51,51,0.1);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.work-with-us button:active {
+    background-color: #54d154;
+    box-shadow: 0px 5px 3px rgba(51,51,51,0);
+    transform: translateY(5px);
+}
+
+
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+/*** Footer ***/
+.footer-main {
+    background-color: #333333;
+    color: #dddddd;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+footer .footer-item{
+    margin: 0 30px;
+}
+
+
+
+.footer-main .social-contact {
+    background-color: #e6e7e6;
+    height: 27px;
+}
+
+footer .header {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer .footer-main .header:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #dddddd;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-23px);
+}
+
+footer .footer-body {
+    margin: 30px 0;
+}
+
+footer .about-content p {
+    margin-bottom: 30px;
+}
+
+
+
+
+.recent-posts .posts{
+    text-align: left;
+}
+
+footer .post-item {
+    margin: 16px 0;
+}
+
+footer .post-item .post-image {
+    float: left;
+}
+footer .post-item .post-image, footer .post-item .post-content, footer .post-item .post-tag {
+    display: inline-block;
+}
+
+
+footer .post-item .post-content p, footer .post-item .post-tag p {
+    margin: 0 8px;
+    padding: 0;
+}
+
+footer .post-item .post-tag p{
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+footer .post-image {
+    width: 53px;
+    height: 53px;
+}
+
+footer .post-image img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.magazine {
+    background-color: #54d154;
+}
+.uidesign {
+    background-color: #ffba00;
+}
+.photography {
+    background-color: #089dea;
+}
+.book {
+    background-color: #f34d04;
+}
+
+
+/* contact us */
+.contact-us form input, .contact-us form textarea {
+    background-color: #444444;
+    border: none;
+    margin-bottom: 2px;
+    color: #fff;
+}
+.contact-us form input:focus, .contact-us form textarea:focus {
+    background-color: #666;
+    color: #fff;
+    
+}
+.contact-us form input, .contact-us form textarea, .contact-us form button {
+    border-radius: 0;
+}
+.contact-us form input[type="text"]{
+    border-radius: 5px 5px 0 0;
+}
+
+.contact-us form button:hover, .contact-us form button:focus, .contact-us form button:active {
+    background-color: #288a28;
+    border:none;
+}
+.contact-us form button {
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #2b9b2b;
+    border:none;
+}
+
+/* ****** */
+.shadow-cnn{
+    -webkit-mask-box-image: url("../img/cnn.png");
+}
+.shadow-tech_crunch{
+    -webkit-mask-box-image: url("../img/tech_crunch.png");
+}
+.shadow-bbc{
+    -webkit-mask-box-image: url("../img/bbc.png");
+}
+.shadow-nytimes{
+    -webkit-mask-box-image: url("../img/nytimes.png");
+}
+
+footer .footer-second{
+    background-color: #222222;
+    color: #111111;
+}
+
+
+footer .footer-second .shadow-client{
+    background-color: #111111;
+    
+}
+
+
+footer .footer-second .header:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #111111;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-23px);
+}
+
+footer .footer-second .logo-area {
+    margin: 25px 0 30px 0;
+}
+
+footer .footer-end {
+    background-color: #111111;
+    line-height: 35px;
+    color: #ffffff;
+}
+ 
+footer .footer-end * {
+    margin: 0;
+    padding: 0;
+}
+footer .footer-end i {
+    transform: translateY(2px);
+}
+
