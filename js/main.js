@@ -14,8 +14,15 @@ $(document).ready(function(){
     
     $(window).resize(function(){
        var height = $('.cd-gallery .mix').width();
-       $('.cd-gallery .mix').css({'height':height+'px'});
-                
+       $('.cd-gallery .mix').css({'height':height+'px'});   
+        
+        
+        if($(window).width() < 992 ){
+            $("nav.navbar").removeClass("fixed-top");
+        } else {
+            $("nav.navbar").addClass("fixed-top");
+        }
+        
     });
 
 
@@ -111,8 +118,9 @@ $(document).ready(function(){
     
     
     
-    
-    
+    if($(window).width() < 992 ){
+        $("nav.navbar").removeClass("fixed-top");
+    }
     
 });
 
